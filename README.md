@@ -1,24 +1,5 @@
 # Defect-Dimensioning-Pipeline
 This repository holds Python code for finding and measuring defects on multiplanar objects using RGB images. 
 
-Below is a list of scripts and their purposes:<br>
--pose_estimation_v11/pose_estimation_v12.py:<br>
-  -Finds the 6D pose of an object in an image<br>
--ML_Segmentation_v25.py: 
-  -Extract 2D coordinates for feature points (geometric corners) of object in image
--Inference_v4_5.py
-  -Applies trained machine model to segment defects
--visibility_utils_v4.py:
-  -Stores functions used during mesh projection 
--Calibration_and_Annotation_v20.py:
-  -Dimensions defects given a segmentation mask
--Camera_Distortion_v4.py: 
-  -Finds camera matrix and distortion coefficients; stores camera calibration
--Keypoint_Mapping_Toy_List_Centered_Test2.json
-  -Stores 2D-3D mapping for the test object
--Image_Comparison_v2.py: 
-  -Segments defects by comparing two images (finds absolute difference and cleans anomalous differences with morphological operations)
--Model-Based_Defect_Segmentation_v5.5py:
-  -Renders a 2D projection of a textured CAD model
--SampleCAD3.sldprt: Solidworks part file for the test object
+Within the repository, "Summary of Files" explains the purpose of each file. The paper describing the overall project will be accessible sometime after August 15 at https://dspace.mit.edu/. 
 
