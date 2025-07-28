@@ -1,9 +1,9 @@
 # Defect-Dimensioning-Pipeline
 This repository holds Python code for finding and measuring defects on multiplanar objects using RGB images. 
 
-Below is a list of scripts and their purposes:
--pose_estimation_v11/pose_estimation_v12.py: 
-  -Finds the 6D pose of an object in an image 
+Below is a list of scripts and their purposes:<br>
+-pose_estimation_v11/pose_estimation_v12.py:<br>
+  -Finds the 6D pose of an object in an image<br>
 -ML_Segmentation_v25.py: 
   -Extract 2D coordinates for feature points (geometric corners) of object in image
 -Inference_v4_5.py
