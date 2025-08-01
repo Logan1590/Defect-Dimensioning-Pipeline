@@ -42,9 +42,15 @@ Python:
 -Train_Segmentation_Model_v2: Uses model_utils_v4 to train a machine learning model
 
 *Core Modules:*
--ML_Segmentation_v25: Extracts 2D coordinates of feature points (geometric corners) of test object from image
--pose_estimation_v11/pose_estimation_v12: Finds the 6D pose of the test object in an image (v12 uses pose refinement, v11 does not. v12 is preferable for correcting differences in object-tool relative perspective).
+-ML_Segmentation: Extracts 2D coordinates of feature points (geometric corners) of test object from image
+  -v25: All corners found for each method passed to final selection
+  -v26: Corner points found by each method are scored and screened before passing to final selection
+-pose_estimation: Finds the 6D pose of the test object in an image 
+  -v11 uses solvePnPRansac
+  -v12 adds pose refinement with solvePnP ITERATIVE based on initial solution from solvePnPRansac
+  -v13 adds a new check on feature point matching between new and reference image that filters out pairings whose distance in 2D image space is more than 3 standard deviations beyond the other pairings. 
 -Object_Tool_Relative_Perspective_Correction_v7: Finds a new tool position to match the perspective of a reference image
 -Model-Based_Defect_Segmentation_v5.5: Renders a 2D projection of a textured CAD model
 -Calibration_and_Annotation_v21: Uses functions from scripts above to segment defects and find and annotate their dimensions 
+
 
