@@ -48,9 +48,10 @@ Python:
 -pose_estimation: Finds the 6D pose of the test object in an image 
   -v11 uses solvePnPRansac
   -v12 adds pose refinement with solvePnP ITERATIVE based on initial solution from solvePnPRansac
-  -v13 adds a new check on feature point matching between new and reference image that filters out pairings whose distance in 2D image space is more than 3 standard deviations beyond the other pairings. 
+  -v13 adds a new check on feature point matching between new and reference image that filters out pairings whose distance in 2D image space is more than 3 standard deviations beyond the other pairings. Also includes a fallback feature that culls the pairing with the largest 2D distance if solvePnPRansac fails.
 -Object_Tool_Relative_Perspective_Correction_v7: Finds a new tool position to match the perspective of a reference image
 -Model-Based_Defect_Segmentation_v5.5: Renders a 2D projection of a textured CAD model
 -Calibration_and_Annotation_v21: Uses functions from scripts above to segment defects and find and annotate their dimensions 
+
 
 
