@@ -53,5 +53,8 @@ Python:
 -Model-Based_Defect_Segmentation_v5.5: Renders a 2D projection of a textured CAD model
 -Calibration_and_Annotation_v21: Uses functions from scripts above to segment defects and find and annotate their dimensions 
 
+*Packages:*
+-python_environment_v6: Docker image of python environment, with all files above included
+
 
 
